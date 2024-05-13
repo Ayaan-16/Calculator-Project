@@ -1,3 +1,7 @@
+# Simple Calculator Code with Good Design using React and Scss
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

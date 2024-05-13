@@ -1,0 +1,100 @@
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@font-face {
+  font-family: "OSTRICH-REGULAR";
+  src: url("./ostrich-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  right: 100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(30, 30, 30);
+}
+
+form input.ops,
+form input.number,
+form input.equal {
+  border: none;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #212529;
+  margin: 1px;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+form input.ops {
+  color: #22abf1;
+}
+
+form input.number {
+  color: white;
+}
+
+form input.equal {
+  width: 184px;
+  color: #22abf1;
+}
+
+form input[type="button"]:hover {
+  background-color: #22abf1;
+  color: #212529;
+}
+
+form input[type="button"]:active {
+  transform: scale(0.95);
+  transition: transform 0.00000000000001s;
+}
+
+form input.display {
+  border: none;
+  outline: 0;
+  width: 243px;
+  height: 100px;
+  font-size: 16px;
+  margin: 0px 0px 10px 0px;
+  border-radius: 0px;
+  color: rgb(56, 56, 56);
+  cursor: pointer;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 30px;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.heading {
+  font-family: "OSTRICH-REGULAR";
+  position: relative;
+  top: -250px;
+  left: 200px;
+}
